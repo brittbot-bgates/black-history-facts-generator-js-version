@@ -1,17 +1,18 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const ejs = require("ejs");
+const facts = require(__dirname + "/src/facts.js");
 
 const app = express();
 const port = 3000;
 
-app.set("view engine", ejs);
+app.set("view engine", "ejs");
 
-app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  var randomFact = facts.getFacts()[Math.floor(Math.random() * facts.getFacts().length)];
+
+  res.render("index", {randomFact});
 });
 
 app.listen(port, () => {
