@@ -7,4 +7,4 @@ I firsted created this project using Python and Flask. After learning Node.js an
 - Express (4.17.1)
 - EJS (3.1.6)
 ## Website
-Coming Soon!
+[Deployed Via Heroku](https://black-history-facts-generator.herokuapp.com/)
