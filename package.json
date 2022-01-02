@@ -9,7 +9,8 @@
   "description": "This web app displays a random Black History Fact every 10 seconds.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "Brittany Gates",
   "license": "ISC"
